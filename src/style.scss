@@ -10,6 +10,9 @@ body{
 [button]{
     cursor:pointer;
 }
+[button]:focus{
+    outline:0;
+}
 [draggable]{
     display: flex;
 }

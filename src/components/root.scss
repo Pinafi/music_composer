@@ -1,10 +1,10 @@
-app-sound-list{
-    @import "./sound-list/sound-list-component.scss";
+app-side-bar{
+    @import "./side-bar/side-bar-component.scss";
 }
 
 app-track-panel{
     @import "./track-panel/track-panel-component.scss";
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
 }
 
 [root-content]{

@@ -1,0 +1,38 @@
+app-sound-list{
+    @import "../sound-list/sound-list-component.scss";
+}
+
+[side-bar-content]{
+    width:300px;
+    height:100%;
+    background:var(--background-color);
+    display: flex;
+    flex-direction: row;
+    border-right:1px solid var(--border-color-1);
+}
+
+[side-bar-content] [barControl]{
+    width:40px;
+    background: var(--background-color-2);
+    border-right: 1px solid var(--border-color-2);
+}
+
+[side-bar-content] [barContent]{
+    display:none;
+    flex-direction: column;
+    flex-grow:1;
+}
+[side-bar-content] [barControl] [sidebarButton]{
+    height:40px;
+    width:39px;
+    border-width: 0px;
+    color:var(--foreground-color-2);
+}
+[side-bar-content] [barControl] [sidebarButton].active{
+    background-color:var(--background-color-1);
+    color:var(--main);
+    border-left: 2px solid var(--main);
+}
+[side-bar-content] [barControl] [sidebarButton].active i{
+    margin-left: -2px;
+}

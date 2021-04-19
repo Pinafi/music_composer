@@ -1,11 +1,11 @@
 
 import Component from "../models/component.js";
-import SoundListComponent  from "./sound-list/sound-list-component.js";
+import SideBarComponent from "./side-bar/side-bar-component.js";
 import TrackPanelComponent from "./track-panel/track-panel-component.js";
 
 // declare subcomponents here
 const declaredComponents = [
-    SoundListComponent,
+    SideBarComponent,
     TrackPanelComponent
 ];
 

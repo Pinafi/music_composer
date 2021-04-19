@@ -145,9 +145,14 @@ class TrackPanelComponent extends Component{
     getMousePosition(event){
         let mousePosition = this.componentElement.querySelector("[mousePosition]");
         
-        let position = this.tracksElement.scrollLeft + event.offsetX;
-        if(event.target != this.tracksElement && event.target.classList.contains("track-sound"))
-            position += parseFloat(event.target.style.left.replace("px",""));
+        let position = 0;
+
+        if(event.target == this.tracksElement)
+            position = this.tracksElement.scrollLeft + event.offsetX;
+        else if(event.target.hasAttribute("track"))
+            position = event.offsetX;
+        else if(event.target.classList.contains("track-sound"))
+            position = parseFloat(event.target.style.left.replace("px",""))+event.offsetX;
 
         let miliseconds = position*this.timelineScale;
         let seconds = (miliseconds/1000 > 1)?  Math.floor(miliseconds/1000) : 0;

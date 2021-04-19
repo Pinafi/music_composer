@@ -3,12 +3,10 @@ app-sound-list-item{
 }
 
 [sound-list-content]{
-    width:250px;
     height:100%;
     background:var(--background-color);
     display: flex;
     flex-direction: column;
-    border-right:1px solid var(--border-color-1);
 }
 [soundListHeader]{
     height: 28px;
