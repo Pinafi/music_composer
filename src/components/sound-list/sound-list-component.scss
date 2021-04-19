@@ -1,0 +1,48 @@
+app-sound-list-item{
+    @import "./sound-list-item/sound-list-item-component.scss";
+}
+
+[sound-list-content]{
+    width:250px;
+    height:100%;
+    background:var(--background-color);
+    display: flex;
+    flex-direction: column;
+    border-right:1px solid var(--border-color-1);
+}
+[soundListHeader]{
+    height: 28px;
+    display:flex;
+    flex-direction:row;
+    padding:0px 16px;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid var(--border-color);
+}
+[soundListHeader] span{
+    font-size: 9pt;
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--foreground-color-1);
+}
+[soundList]{
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
+}
+[addSoundButton]{
+    width: 100%;
+    background-color: var(--background-color-1);
+    color: var(--foreground-color);
+    border: unset;
+    cursor: pointer;
+    font-size: 8pt;
+    height: 29px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+[addSoundButton] i{
+    font-size: 10pt;
+}

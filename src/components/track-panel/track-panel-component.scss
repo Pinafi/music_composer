@@ -1,0 +1,218 @@
+[track-panel-content]{
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    background: var(--background-color);
+    display: inline-flex;
+    flex-direction: column;  
+}
+[track-panel-content] [header]{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+[track-panel-content] [header] [trackPanelHeader]{
+    height: 30px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid var(--border-color);
+    padding:0px 16px;
+    color: var(--foreground-color-2);
+}
+[track-panel-content] [header] [trackPanelHeader] [counter]{
+    font-size: 12pt;
+    line-height: 30px;
+}
+[track-panel-content] [header] [controlsHeader]{
+    height: 30px;
+    width:150px;
+    border-bottom: 1px solid var(--border-color);
+}
+[track-panel-content] [header] [controlsHeader] [addTrackButton]{
+    width: 100%;
+    background-color: var(--background-color-1);
+    color: var(--foreground-color);
+    border: unset;
+    cursor: pointer;
+    font-size: 8pt;
+    height: 29px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+[track-panel-content] [header] [controlsHeader] [addTrackButton] i{
+    font-size: 10pt;
+}
+[track-panel-content] [header] [tracksHeader]{ 
+    height:30px;
+    display: block;
+    width: calc(100% - 150px);
+    overflow-x: hidden;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+[track-panel-content] [header] [tracksHeader] [needleHead]{ 
+    position: absolute;
+    height: 100%;
+    background: var(--needle);
+    width: 3px;
+    margin-left:-1px;
+    z-index: 10;
+}
+[track-panel-content] [body] [tracks] [needleBody]{
+    position: absolute;
+    background: var(--needle);
+    pointer-events: none;
+    width: 1px;
+    z-index: 10;
+}
+[track-panel-content] [header] [tracksHeader] [timeline]{
+    min-width: 100%;
+    height: 100%;
+    background-position: 0px 24px;
+    background-repeat: repeat no-repeat;
+    background-size: 60px 5px;
+    background-image: 
+    linear-gradient(
+        to right, 
+        var(--border-color-2) 2.1px, 
+        transparent 1.1px, 
+        transparent calc(50% - 2.1px), 
+        var(--border-color-1) calc(50% - 2.1px), 
+        var(--border-color-1) calc(50% + 1.1px), 
+        transparent calc(50% + 1.1px), 
+        transparent calc(100% - 1.1px), 
+        var(--border-color-2) calc(100% - 1.1px), 
+        var(--border-color-2) 100%);
+    position:relative;
+}
+[track-panel-content] [header] [tracksHeader] [timeline] > span{
+    position: absolute;
+    font-size: 7pt;
+    height: 100%;
+    width: 0px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+[track-panel-content] [header] [tracksHeader] [timeline] > span span{
+    font-size: 7pt;
+}
+[track-panel-content] [body] {
+    height: calc(100% - 79px);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+[track-panel-content] [body] [controls] {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    color: var(--foreground-color-2);
+    background: var(--background-color);
+    height: 100%;
+    overflow-y: hidden;
+    padding-bottom: 17px;
+}
+[track-panel-content] [body] [controls] .track-control{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    color: var(--foreground-color-2);
+    background: var(--background-color);
+    border-bottom:1px solid var(--border-color-1);
+}
+[track-panel-content] [body] [controls] .track-control .track-title{
+    width:100%;
+    font-size: 9pt;
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--foreground-color-1);
+    padding:4px 8px;
+}
+[track-panel-content] [body] [tracks] {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: calc(100% - 150px);
+    overflow-x: scroll;
+    overflow-y: scroll;
+    position: relative;
+}
+[track-panel-content],
+[track-panel-content] *{
+    -webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
+[track-panel-content] [body] [tracks] [track]{
+    position: relative;
+    height:49px;
+    min-height: 49px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4px 0px;
+    background-size: 60px 40px;
+    background-color: var(--background-color-5);
+    border-bottom:1px solid var(--border-color-1);
+    background-image: 
+        linear-gradient(
+            to right, 
+            var(--border-color-2) 1px, 
+            transparent 1px
+        ), 
+        linear-gradient(
+            to right, 
+            transparent calc(50% - 0.5px), 
+            var(--border-color-1) calc(50% - 0.5px),
+            var(--border-color-1) calc(50% + 0.5px), 
+            transparent 1px
+        );
+}
+[track-panel-content] [body] [tracks] [track] .track-sound{
+    position: absolute;
+    margin: 4px 0px;
+    height:calc(100% - 8px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 0.3rem;
+    background:var(--main);
+    color:var(--foreground-color-3);
+    align-items: center;
+}
+[track-panel-content] [body] [tracks] [track] .sound-title{
+    width:100%;
+    padding:0px 4px;
+    pointer-events: none;
+}
+[track-panel-content] [footer]{
+    height: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding:0px 16px;
+    justify-content: flex-end;
+    background: var(--background-color-2);
+}
+[track-panel-content] [footer] [counter]{
+    line-height: 18px;
+    font-size: 10pt;
+    margin-right: auto;
+}
+[track-panel-content] [footer] [mousePosition]{
+    line-height: 18px;
+    font-size: 9pt;
+    font-weight: 600;
+    width: 110px;
+    color: var(--foreground-color-1);
+}

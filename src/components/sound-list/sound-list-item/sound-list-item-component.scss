@@ -1,0 +1,74 @@
+[sound-list-item-content]{
+    width:100%;
+    height:unset;
+    background-color: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    border:unset;
+}
+[soundName]{
+    flex-grow: 1;
+    text-transform: uppercase;
+    font-size: 7pt;
+    line-height: 16px;
+    font-weight: 400;
+    color:var(--foreground-color-1);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0px 4px 0px 0px;
+}
+
+[soundName]::before{
+    margin-right:8px;
+}
+
+.control-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 0px 0px 0px 4px;
+}
+
+.control-buttons i{
+    font-size: 10pt;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 2px;
+    cursor: pointer;
+}
+
+[progressBar]{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    height: 2px;
+    margin: 10px 0px;
+    background-color: var(--background-color-3);
+    box-sizing: border-box;
+}
+[progressBar] .bar{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    height: 2px;
+    width: 0px;
+    background-color: var(--background-color-4);
+}
+[progressBar] .bar button{
+    display: inline-flex;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    right: 0px;
+    border: unset;
+    margin-right: -3px;
+    padding: unset;
+    border-radius: 3px;
+    background-color: var(--background-color-4);
+}

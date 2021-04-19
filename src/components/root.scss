@@ -1,0 +1,14 @@
+app-sound-list{
+    @import "./sound-list/sound-list-component.scss";
+}
+
+app-track-panel{
+    @import "./track-panel/track-panel-component.scss";
+    width: calc(100% - 250px);
+}
+
+[root-content]{
+    display: flex;
+    height:100vh;
+    width:100%;
+}

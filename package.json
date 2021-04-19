@@ -1,0 +1,21 @@
+{
+  "name": "resonance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "electron": "electron .",
+    "sass": "node-sass src/style.scss src/style.css -w --output-style compressed"
+  },
+  "author": "Lucas Pinafi de Andrade",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1",
+    "mustache": "^4.2.0",
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,58 @@
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./components/root.scss";
+
+body{
+    margin:unset;
+    padding: unset;
+    min-height:100vh;
+}
+[button]{
+    cursor:pointer;
+}
+[draggable]{
+    display: flex;
+}
+
+.noselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
+.em-0{
+    font-size: 0em;
+}
+.em-01{
+    font-size: 0.1em;
+}
+.em-02{
+    font-size: 0.2em;
+}
+.em-03{
+    font-size: 0.3em;
+}
+.em-04{
+    font-size: 0.4em;
+}
+.em-05{
+    font-size: 0.5em;
+}
+.em-06{
+    font-size: 0.6em;
+}
+.em-07{
+    font-size: 0.7em;
+}
+.em-08{
+    font-size: 0.8em;
+}
+.em-09{
+    font-size: 0.9em;
+}
+.em-1{
+    font-size: 1em;
+}

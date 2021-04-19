@@ -1,0 +1,25 @@
+{
+    "light":{
+        "main":"#ff9900",
+        "background-color":[
+            "#ffffff",
+            "#f5f5f5",
+            "#eeeeee",
+            "#cccccc",
+            "#000000",
+            "#f9f9f9"
+        ],
+        "foreground-color":[
+            "#000000aa",
+            "#00000088",
+            "#666666",
+            "#ffffff"
+        ],
+        "border-color":[
+            "#f5f5f5",
+            "#eeeeee",
+            "#dddddd"
+        ],
+        "needle":"#ff000066"
+    }
+}
